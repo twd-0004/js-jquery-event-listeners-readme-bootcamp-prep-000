@@ -1,10 +1,12 @@
 //define functions here
 function getIt() {
   $('p').on('click', function() {
-    alert('Hey!'));
-}
+    alert('Hey!')
+});
 function frameIt() {
-  $('img').on('load', $(this).addClass('tasty'))
+  $('img').on('load', function() {
+    $(this).addClass('tasty')
+  })
 }
 function pressIt() {
   $(':input').on('keydown', function(e) {
