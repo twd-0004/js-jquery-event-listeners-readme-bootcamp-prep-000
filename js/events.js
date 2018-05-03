@@ -7,7 +7,7 @@ function getIt() {
 function frameIt() {
   $('img').on('load', function() {
     $(this).addClass('tasty')
-  })
+  });
 }
 function pressIt() {
   $(':input').on('keydown', function(e) {
@@ -15,11 +15,12 @@ function pressIt() {
 
     if (parseInt(e.keyCode) === 71)
       alert('You pressed G!')
-  })
+  });
 }
 function submitIt() {
   $('form').on('submit', function() {
-    alert('Your form is going to be submitted now.'))
+    alert('Your form is going to be submitted now.')
+  });
 }
 $(document).ready(function(){
 // call functions here
