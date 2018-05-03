@@ -9,7 +9,7 @@ function pressIt() {
   $(':input').on('keydown', function(e) {
     console.log(e.keyCode)
 
-    if (parseInt(e) === 71)
+    if (parseInt(e.keyCode) === 71)
       alert('You pressed G!')
   })
 }
